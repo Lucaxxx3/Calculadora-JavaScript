@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora JS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <main class="d-flex justify-content-center align-items-center vh-100">
+      <div class="card p-2 bg-light w-25 h-auto">
+        <form>
+          <input
+            type="text"
+            disabled
+            class="form-control"
+            id="ip_result"
+            placeholder="0"
+          />
+          <div class="d-grid grid-4 gap-2 mt-3">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              id="button"
+              onclick="appendToDisplay('7')"
+            >
+              7
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              id="button"
+              onclick="appendToDisplay('8')"
+            >
+              8
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              id="button"
+              onclick="appendToDisplay('9')"
+            >
+              9
+            </button>
+            <button
+              type="button"
+              class="btn btn-dark btn-lg"
+              id="button"
+              onclick="appendToDisplay('/')"
+            >
+              /
+            </button>
+          </div>
+          <div class="d-grid grid-4 gap-2 mt-1">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              id="button"
+              onclick="appendToDisplay('4')"
+            >
+              4
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              id="button"
+              onclick="appendToDisplay('5')"
+            >
+              5
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              id="button"
+              onclick="appendToDisplay('6')"
+            >
+              6
+            </button>
+            <button
+              type="button"
+              class="btn btn-dark btn-lg"
+              id="button"
+              onclick="appendToDisplay('*')"
+            >
+              *
+            </button>
+          </div>
+          <div class="d-grid grid-4 gap-2 mt-1">
+            <button
+              name="button"
+              type="button"
+              class="btn btn-primary btn-lg"
+              id="button"
+              onclick="appendToDisplay('1')"
+            >
+              1
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              id="button"
+              onclick="appendToDisplay('2')"
+            >
+              2
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              id="button"
+              onclick="appendToDisplay('3')"
+            >
+              3
+            </button>
+            <button
+              type="button"
+              class="btn btn-dark btn-lg"
+              id="button"
+              onclick="appendToDisplay('-')"
+            >
+              -
+            </button>
+          </div>
+          <div class="d-grid grid-4 gap-2 mt-1">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              id="button"
+              onclick="clearDisplay()"
+            >
+              C
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              id="button"
+              onclick="appendToDisplay('0')"
+            >
+              0
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              id="equal"
+              onclick="calculateResult()"
+            >
+              =
+            </button>
+            <button
+              type="button"
+              class="btn btn-dark btn-lg"
+              id="button"
+              onclick="appendToDisplay('+')"
+            >
+              +
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
